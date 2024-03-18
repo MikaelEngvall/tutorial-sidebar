@@ -62,9 +62,9 @@ const Sidebar = () => {
             <img src={Dashboard} alt="dashboard" />
             <a href="/">dashboard</a>
           </li>
-          <li className={location.pathname === "/transactions" ? "active" : ""}>
-            <img src={Transactions} alt="transactions" />
-            <a href="/transactions">transactions</a>
+          <li className={location.pathname === "/ads" ? "active" : ""}>
+            <img src={Transactions} alt="ads" />
+            <a href="/ads">ads</a>
           </li>
           <li className={location.pathname === "/performance" ? "active" : ""}>
             <img src={Performance} alt="Performance" />
