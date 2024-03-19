@@ -9,13 +9,14 @@ import Settings from "../Images/settings.svg";
 import Support from "../Images/support.svg";
 import { useLocation } from "react-router-dom";
 
-const Sidebar = () => {
+const Sidebar = ({ toggleSidebar }) => {
   const location = useLocation();
 
   const [closeMenu, setCloseMenu] = useState(false);
 
   const handleCloseMenu = () => {
     setCloseMenu(!closeMenu);
+    toggleSidebar();
   };
 
   return (
@@ -70,9 +71,9 @@ const Sidebar = () => {
             <img src={Performance} alt="Performance" />
             <a href="/performance">performance</a>
           </li>
-          <li className={location.pathname === "/news" ? "active" : ""}>
-            <img src={News} alt="News" />
-            <a href="/news">news</a>
+          <li className={location.pathname === "/htmlpages" ? "active" : ""}>
+            <img src={News} alt="HTMLpages" />
+            <a href="/htmlpages">Html pages</a>
           </li>
           <li className={location.pathname === "/settings" ? "active" : ""}>
             <img src={Settings} alt="Settings" />
