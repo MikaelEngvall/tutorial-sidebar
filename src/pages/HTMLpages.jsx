@@ -6,7 +6,7 @@ const HTMLpages = ({ sidebarIsOpen }) => {
   const [screenshot, setScreenshot] = useState("");
 
   useEffect(() => {
-    fetch("./genereradeAnnonser/javautvecklare2.html")
+    fetch("./genereradeAnnonser/pilot1.html")
       .then((response) => response.text())
       .then((data) => {
         setHtmlCode(data);
